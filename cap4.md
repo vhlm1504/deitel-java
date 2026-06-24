@@ -18,7 +18,6 @@ This is a **generic Markdown template** showcasing essential formatting features
 
 
 
-
 ## 2. Text Formatting
 - **Bold** (`**text**` or `__text__`)
 - *Italic* (`*text*` or `_text_`)
