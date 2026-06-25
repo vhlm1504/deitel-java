@@ -1,6 +1,7 @@
 com\mycompany\deitel\java\cap3\Addition.class
 com\mycompany\deitel\java\cap3\InvoiceTest.class
 com\mycompany\deitel\java\cap4\StudentTest.class
+com\mycompany\deitel\java\cap4\AutoPolicyTest.class
 com\mycompany\deitel\java\cap3\Account.class
 com\mycompany\deitel\java\cap3\Employee.class
 com\mycompany\deitel\java\cap4\DrawPanel.class
@@ -11,5 +12,6 @@ com\mycompany\deitel\java\cap3\AccountTest.class
 com\mycompany\deitel\java\cap3\Dialog1.class
 com\mycompany\deitel\java\cap3\ModifiedAccount311.class
 com\mycompany\deitel\java\cap4\Student.class
+com\mycompany\deitel\java\cap4\AutoPolicy.class
 com\mycompany\deitel\java\cap4\DrawPanelTest.class
 com\mycompany\deitel\java\cap3\Invoice.class

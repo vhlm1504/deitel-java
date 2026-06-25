@@ -13,8 +13,31 @@ This is a **generic Markdown template** showcasing essential formatting features
 ###### H6 (Smallest)
 
 ---
+métodos declarados dentro do bloco da classe test, podem ser chamados diretamente, pelo identificador. 
+    se o método for static.
+já os declarados fora do corpo da classe, precisam ser chamados usando-se o nome da classe primeiro. duas maneiras
+    métodos declarados em outras classes não públicas no memso arquivo
+    public class Executavel{
+        public static void main(String[] args)
+        {
+            Ajudante util = new Ajudante();
+            util.mensagem();
+        }
+    }
+    
+    class Ajudante()
+    {
+        public void mensgem(){
+            System.out.println("olá de fora");
+        }
+    }
+    métodos de outros arquivos
+        mesma lógica, precisa instanciar para depois chamar os métodos métodos de instância ou usar o nome da classe NomeClasse.método() se for método static
 
+métodos static pertencem à classe. é carregado uma única vez no início da execução e não precisa de new para ser executado. deve ser acessado pelo nome da classe
+métodos de instância pertencem ao objeto que precisam do new para passarem a existir. São acessáveis pelo objeto.
 
+        
 
 
 
