@@ -37,7 +37,30 @@ já os declarados fora do corpo da classe, precisam ser chamados usando-se o nom
 métodos static pertencem à classe. é carregado uma única vez no início da execução e não precisa de new para ser executado. deve ser acessado pelo nome da classe
 métodos de instância pertencem ao objeto que precisam do new para passarem a existir. São acessáveis pelo objeto.
 
-        
+Avaliação curto circuito de condições complexas
+    expressões com && e || são avaliadas apenas até que se saiba se a condição é verdadeira ou falsa. Então, deve-se pôr 
+    como primeiros testes os mais fáceis de ser false
+    
+Operadores Boolean Logical AND & e boolean logical inclusive OR |
+    & e | são identicos aos operadores && e || exceto que eles sempre avaliam ambos os seus operandos. Eles não fazem avaliação curto circuito
+    isso é útil quando quando o operador da direita requer um efeito colateral, a modificação di valor de uma variável 
+    ex.: (birthday == true) | (++age >= 65)
+    mas isso para casos raros, é boa prática evitar expressões com efeitos colaterais
+Boolean logical exclusive OR ^
+    é true só se um, e só um, de seus operandos for true. também não tem curto circuito
+    true e true = false
+    true e false = true
+    false e true = true
+    false e false = false
+
+Regras para programação estruturada
+    1. comece com o diagrama de atividade simples. action state
+    2. qualquer action state pode ser substituido por dois action states em sequência.
+    3. qualquer action state pode ser substituido por qualquer declaração de controle(sequência de action states, if, if...else,
+switch, while, do...while or for).
+    4. Regras 2 e 3 podem ser aplicadas quão frequentemente se queira e em qualquer ordem.
+    
+
 
 
 

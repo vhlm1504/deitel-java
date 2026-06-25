@@ -31,7 +31,7 @@ static Methods, static Fields and Class Math
     variáveis de instância e variáveis de classe, juntas, são chamadas de fields, campos.
 
 public final static cte. public permite que você use a cte nas suas mesmas classes. final indica que é cte. static permite que seja 
-acessível pelo nome da classe.
+acessível pelo nome da classe. Se o atributo for ser usado apenas na sua classe, declara-se private.
 
 Porque o método main é declarado static: para que a jvm possa invocar o método main sem precisar de um objeto da clases, que realmente não vai existir ainda.
 
@@ -42,7 +42,17 @@ empurrado, pushed, na pilha de chamada de métodos, method-call stack. A pilha d
 variáveis locais, inlcuindo os parâmetros do método. Essa memória é chamada stack frame ou activation record do método chamado e é uma 
 porção do method-call stack guardado. 
     stack overflow erro que ocorre quando há mais chamadas de métodos do que memória disponível.
+
 página 212 pacotes importantes em java
+
+Java não permite a comparação entre tipos primitivos e valores enum.
+
+shadowing: se uma variável local ou parâmetro em um médoto tem o mesmo nome do que o campo na classe, o campo é escondto até que o 
+bloco termine sua execução.
+
+method overload
+
+
 
     
     
