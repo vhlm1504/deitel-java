@@ -48,12 +48,14 @@ public class AccountTest {
         oneMoreAccount.setName(theName);
         System.out.println("Please enter the new balance: ");
         double newBalance = input.nextDouble();
+        input.nextDouble();
         oneMoreAccount.setBalance(newBalance);
         System.out.println();
         
         System.out.printf("Name and balance in object oneMoreAccount is: %n%s %f %n", oneMoreAccount.getName(), oneMoreAccount.getBalance());
         System.out.printf("faça um depósito: ");
         newBalance = input.nextDouble();
+        input.nextDouble()
         oneMoreAccount.deposit(newBalance);
         System.out.println("conta: " + oneMoreAccount.getBalance());
         */
@@ -62,6 +64,7 @@ public class AccountTest {
         System.out.printf("Saldo conta: %f%n%n", conta.getBalance());
         System.out.println("Quanto quer sacar? ");
         double saque = input.nextDouble();
+        input.nextDouble()
         conta.withdraw(saque);
         System.out.printf("Saldo conta: %n%f%n", conta.getBalance());
         */
