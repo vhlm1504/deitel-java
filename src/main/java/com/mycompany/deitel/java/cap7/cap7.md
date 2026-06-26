@@ -118,6 +118,49 @@ o uso de ellipsis só pode ocorrer uma vez numa lista de parâmetros.
 melhor do que usar vários métodos com sobrecarga
 
 
+Usando command-line arguments
+usando os parâmetros do método main
+
+
+Classe Array
+sort
+binarySearch
+equals comparar arrays
+fill por valores dentro de um array
+arraycopy
+Arrays.sort(doubleArray);
+Arrays.fill(filledIntArray, 7);
+System.arraycopy(intArray, 0, intArrayCopy, 0, intArray.length);
+boolean b = Arrays.equals(intArray, intArrayCopy);
+location = Arrays.binarySearch(intArray, 8763);
+parallelSort can sort large arrays more efficiently on multicore
+systems.
+
+ArrayList<Sring> list;
+Java API provê várias estruturas de dados predefinidas, chamadas coleções, collections. Usadas para guardar grupos de objetos relacionados
+na memória.
+ArrayList<T> é uma classe de coleção do pacote java.util
+T é uma convenção para guardar lugar para o tipo quando declarando new ArrayList
+ArrayList<String> list; só objetos String
+ArrayList<Integer> integers; só objetos int
+Como se trata de uma classe genérica, classes que podem ser usadas com qualquer tipo de dados não primitivos, 
+só podem ser de tipos não primitivos, por isso é necessário usar os wrappers
+métodos comuns da classe ArrayList<T>
+add
+remove
+clear
+contains
+get
+indexOf
+remove
+size
+trimToSize
+Notação diamante <>. Diamond notation for creating an object of a generic class
+
+ArrayList<String> items = new ArrayList<String>();
+ArrayList<String> items = new ArrayList<>(); diamond (<>) notation faz com que o compilador descubra sozinho que tipo de objeto
+a classe genérica vai usar, neste caso, String.
+
 
 
 
