@@ -23,6 +23,8 @@ public class Addition {
         sum = num1 + num2;
         
         System.out.printf("Sum is %d%n", sum);
+        
+        input.close();
     }
     
 }

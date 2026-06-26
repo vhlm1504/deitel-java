@@ -65,5 +65,7 @@ public class AccountTest {
         conta.withdraw(saque);
         System.out.printf("Saldo conta: %n%f%n", conta.getBalance());
         */
+        
+        input.close();
     }
 }
