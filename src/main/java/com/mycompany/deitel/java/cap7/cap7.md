@@ -36,7 +36,6 @@ números aleatórios
 java.security.SecureRandom;
 ++frequency[1 + randomNumbers.nextInt(6)];
 
-
 Exception handling
 Uma exceção, exception, indica um problema que ocorreu durante a execução.
 Sugere que o problema ocorre de forma não frequente e que a regra é executar corretamente
@@ -83,8 +82,40 @@ public static void modifyArray(double[] b)
 public static void modigyEment(double element)
 
 
+Multdimensional Arrays
+int[][] b = {{1, 2}, {3, 4}};
+int[][] b = new int[3][5];
+
+Um array com multiplas linhas e número de colunas diferentes pode ser criado assim também:
+int[][] b = new int[2][];
+b[0] = new int[5];
+b[1] = new int[3];
+int[][] array1 = {{1, 2, 3}, {4, 5, 6}};
+int[][] array2 = {{1, 2}, {3}, {4, 5, 6}};
+public static void outputArray(int[][] array)
+{
+    for(int row = 0; row < array.length; row++)
+        {
+            for(int column = 0; column < array[row].length; column++)
+            {
+                System.out.printf("%d ", array[row][column]);
+            }
+            System.out.println();
+        }
+
+}
+
+array.length determines the number of
+rows in the array. In the inner for statement, the expression array[row].length determines
+the number of columns in the current row of the array
 
 
+Variable-lenght argument lists
+ellipsis (...) 
+... nos parâmetros do método.
+indica que o método recebe um número variável de argumentos daquele tipo em particular
+o uso de ellipsis só pode ocorrer uma vez numa lista de parâmetros.
+melhor do que usar vários métodos com sobrecarga
 
 
 
