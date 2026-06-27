@@ -34,6 +34,19 @@ catch(IllegalArgumentException e)
         System.out.printf("Exception: %s%n%n", e.getMessage());
     }
 
+modificadores de acesso public e private
+    o propósito primário dos métodos public é apresentar às classes clientes uma visão dos seviçoes que a classe provê.
+    privates methods e variables não tem seus detalhes de implementação acessíveis aos clientes
+
+todo objeto pode acessar uma referênca a si mesmo através de this. (this reference)
+this se refere a variáveis de instância do objeto e outros métodos.
+
+Non-public classes can be used only by other classes in the same package
+
+Métodos static não podem acessar diretamente variáveis private de instância.
+
+
+
 
 
 

@@ -32,6 +32,9 @@ public class Time1Test {
         }
         
         displayTime("After calling setTime with invalid values", time);
+        
+        SimpleTime ntime = new SimpleTime(10, 23, 39); //da classe não pública da classe ThisTest. Mesmo pacote deixa instanciar
+        System.out.println(ntime.toUniversalString());
     }
     
     private static void displayTime(String header, Time1 t)
