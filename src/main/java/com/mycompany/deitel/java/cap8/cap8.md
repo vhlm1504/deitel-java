@@ -49,6 +49,9 @@ Composição
 Quando uma classe usa referência a objetos de outras classes. Também chamadao, tem um relacionamento, has-a relationship
 
 enum Types
+tipos enum são implicitamente final e static por isso não se usa o new
+enum define um conjunto que representado por identificadores únicos.
+todos os tipos enum são tipos de referência.
 
 
 
