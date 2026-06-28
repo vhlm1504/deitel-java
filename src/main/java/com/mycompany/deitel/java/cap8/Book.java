@@ -17,24 +17,24 @@ public enum Book {
     VBHTP("Visual Baseic How to Program", "2014");
     
     private final String title;
-    private final String copyrighYear;
+    private final String copyrightYear;
     
     //enum constructor
     Book(String title, String copyrightYear)
     {
         this.title = title;
-        this.copyrighYear = copyrightYear;
+        this.copyrightYear = copyrightYear;
     }
     
     //accessor for field title
     public String getTitle()
     {
-        return this.title;
+        return title;
     }
     
     //accessor for field copyrightYear
     public String getCopyrightYear()
     {
-        return this.copyrighYear;
+        return copyrightYear;
     }
 }

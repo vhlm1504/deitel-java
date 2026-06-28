@@ -52,6 +52,17 @@ enum Types
 tipos enum são implicitamente final e static por isso não se usa o new
 enum define um conjunto que representado por identificadores únicos.
 todos os tipos enum são tipos de referência.
+For every enum, the compiler generates the static method values that returns an array of the enum’s constants in the order they were declared
+
+
+Memory leak
+vazamento de memória ainda pode ocorrer em java, mesmo com o garbage collector. 
+então é importante manter em mente a necessidade de liberar os recursos não mais necessários no programa.
+nunca chamar o método finalize, está diponível em todas as classes mas gera mais problema que resolve.
+A ideia original do finalize erar permitir ao garbage collector realizar uma termination housekeeping num objeto antes de retormar 
+a memória do objeto.
+É considerado boa prática, em toda classe que usa recursos do sistema como arquivos no disco, prover métodos que os programadores 
+possam chamar para liberar recursos quando não mais são necessários. AutoClossable objects try-with-resources statement
 
 
 
