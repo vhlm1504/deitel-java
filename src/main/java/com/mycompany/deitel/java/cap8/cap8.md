@@ -43,7 +43,13 @@ this se refere a variáveis de instância do objeto e outros métodos.
 
 Non-public classes can be used only by other classes in the same package
 
-Métodos static não podem acessar diretamente variáveis private de instância.
+Métodos static não podem usar variáveis ou métodos não static
+
+Composição
+Quando uma classe usa referência a objetos de outras classes. Também chamadao, tem um relacionamento, has-a relationship
+
+enum Types
+
 
 
 
