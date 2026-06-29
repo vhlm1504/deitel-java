@@ -65,6 +65,14 @@ a memória do objeto.
 possam chamar para liberar recursos quando não mais são necessários. AutoClossable objects try-with-resources statement
 
 
+static Import
+permite que possamos importar membros static de outra classe ou interface para que possamos acessalas via unqualified names
+então o nome da classe e o . não seiram requeridos se usarmos o import static chamando só o nome do método ou outro membro
+import static packageName.ClassName.staticMemberName;
+ou importar todos os membros static da classe
+import static packageName.ClassName.*;
+
+
 
 
 
