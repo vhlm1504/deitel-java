@@ -33,6 +33,33 @@ is-a relationship representa herança. Um objeto de uma subclasse também pode s
 de seus superclasse. ex.: um carro é um veículo.
 has-a relationship representa composição. Um objeto contem referência de membros de outro objeto
 
+Uma subclasse pode customizar métodos herdados, para fazer isso usamos o overrides(redefine)
+
+protected members
+um modificador de acesso como public e private
+um membro public de uma classe é acessível onde quer que seja que o a classe tenha uma referêcia a um objeto seu
+ou uma de suas subclasses.
+um membro private é acessível apenas dentro da classe em si.
+protected níevel intermediário de acesso entre public e private. Um membro protected de uma superclasse pode 
+ser acessado por membros desta superclasse por membros de suas subclasses e por membros de outras classes dentro
+do mesmo pacote.
+membros private não são acessíveis por subclasses, ficam escondidos em sua própria classe só sendo acessíveis
+pelos métodos set e get
+
+super
+quando fizremos um override num membro herdado de uma superclasse, e quisermos agora usar o membro original
+basta usar o super. para se referenciar ao membro herdade original.
+
+contains a first name, last name, social security number, gross sales amount, commission
+rate and base salary. Class BasePlusCommissionEmployee’s public services include
+a BasePlusCommissionEmployee constructor (lines 15–42) and methods earnings
+(lines 111–114) and toString (lines 117–126). Lines 45–108 declare public get and set
+methods for the class’s private instance variables (declared in lines 7–12) firstName,
+lastName, socialSecurityNumber, grossSales, commissionRate and baseSalary.
+These variables and methods encapsulate all the necessary features of a base-salaried commission
+employee.
+
+toda classe extend a partir da classe Object, nem precisa escrver já vem implícito.
 
 
 
