@@ -26,7 +26,7 @@ public class BasePlusCommissionEmployeeTest {
         BasePlusCommissionEmployeeComExtends novoEmployee = 
                                 new BasePlusCommissionEmployeeComExtends("Bob", "Lewis", "333-33-3333", 5000.0, .04, 300.0);
         
-        System.out.println("novoEmployee information obtained by get methods:%n");
+        System.out.println("novoEmployee information obtained by get methods:");
         System.out.printf("%s %s%n", "First name is", novoEmployee.getFirstName());
         System.out.printf("%s %s%n", "Last name is", novoEmployee.getLastName());
         System.out.printf("%s %s%n", "Social security number is", novoEmployee.getSocialSecurityNumber());
@@ -36,6 +36,7 @@ public class BasePlusCommissionEmployeeTest {
         System.out.printf("%s %.2f%n", "earnings", novoEmployee.earnings());
         
         System.out.printf("%n%s%n", novoEmployee.toString());
+        
         
     }
     

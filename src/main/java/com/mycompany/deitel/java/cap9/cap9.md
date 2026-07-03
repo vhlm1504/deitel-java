@@ -61,6 +61,12 @@ employee.
 
 toda classe extend a partir da classe Object, nem precisa escrver já vem implícito.
 
+superclass constructor call syntax. super(...); dentro do contrutor da subclasse e precisa ser a primeira declaração do construtor
+
+
+
+
+
 
 
 
