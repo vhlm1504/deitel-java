@@ -63,19 +63,20 @@ toda classe extend a partir da classe Object, nem precisa escrver já vem implí
 
 superclass constructor call syntax. super(...); dentro do contrutor da subclasse e precisa ser a primeira declaração do construtor
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+a classe Object tem 11 métodos, alguns overloades, que são herdados por qualquer outra classe implicitamente.
+    equals() compara dois objetos e retorna true ou false
+    hashCode() Hashcodes são valores int usados para armazenagem e recuperação de alta velocidade na estrutura de dados
+hashtable, este método também é chamado implicitamente no toString.
+    toString() retorna uma representação String do objeto. A implementação original só retorna os nomes do pacote e da classe e um código hexadecimal que é retornado pelo método hashCode
+    wait(), notify(), notifyAll() wait() tem mais três versões overloaded. São métodos para multithreading
+    getClass() todo objeto em Java conhece seu próprio tipo quando em tempo de execução. getClass() da classe Class(package java.lang) contém informação sobre o tipo do objeto
+    finalize() método protected chamado pelo garbage collector para realizar termination housekeeping num objeto logo antes do gargabe collector pegar a memória do objeto. Evitar usa-lo
+    clone() method protected que recebe nenhum argumento e retorna uma referência do objeto, faz uma cópia do objeto do qual é chamado. 
+        a implementação default faz uma shallow copy, valores de variáveis de instância do objeto clonado são copiados para o criado.
+        para variáveis tipo referência, apenas as referências são copiadas.
+        para melhor uso, devesse fazer o override. clone típicos overriden implementam uma deep copy que cria um novo objeto apra cada variável de instância tipo referência
+            a correta implementação é difícil e é recomendado pelo indústria que se use object serialization invés.
+        Arrays são objetos e possuem um método overriden clone() para copiar o array, no entanto, se o array armazena referências a objetos, os objetos não são copiados, shallow copy é realizada.
 
 
 
