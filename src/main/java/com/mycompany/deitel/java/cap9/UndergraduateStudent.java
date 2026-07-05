@@ -26,6 +26,33 @@ public class UndergraduateStudent extends Student{
         this.dataInicioCurso = dataInicioCurso;
         this.dataFimCurso = dataFimCurso;
     }
+
+    public String getFaculdade() {
+        return faculdade;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public int getCodCurso() {
+        return codCurso;
+    }
+
+    public String getDataInicioCurso() {
+        return dataInicioCurso;
+    }
+
+    public String getDataFimCurso() {
+        return dataFimCurso;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return String.format("%s%s: %s%n%s: %d - %s%n%s: %s - %s%n", super.toString(), "Faculdade", getFaculdade(), "Curso", getCodCurso(), 
+                getCurso(), "Periodo do curso", getDataInicioCurso(), getDataFimCurso());
+    }
     
     
     
