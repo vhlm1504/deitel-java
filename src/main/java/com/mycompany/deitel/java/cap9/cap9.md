@@ -81,6 +81,8 @@ hashtable, este método também é chamado implicitamente no toString.
 
 
 
+
+
 ## 2. Text Formatting
 - **Bold** (`**text**` or `__text__`)
 - *Italic* (`*text*` or `_text_`)

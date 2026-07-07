@@ -13,6 +13,7 @@ public class Student {
     private static int numeroMatricula = 0;
     private String registroAcademico;
     private final String RA = "RA";
+    //private final int RE;
     
     private  String firstName;
     private  String lastName;
@@ -26,8 +27,14 @@ public class Student {
         this.nascimento = nascimento;
         
         registroAcademico = String.format("%s%010d", RA, ++numeroMatricula);
+        //RE = numeroMatricula;
     }
-
+    
+    /*public int getRE() {
+        return RE;
+    }
+    */
+    
     public String getRegistroAcademico() {
         return registroAcademico;
     }
@@ -58,8 +65,8 @@ public class Student {
         
     public String toString()
     {
-        return String.format("%s: %s%n%s: %s%n%s: %s%n%s: %s%n", "Nome", getFirstName(), "Ultimo Nome", getLastName(), 
-                "Data de Nascimento", getNascimento(), "Registro Academico", getRegistroAcademico());
+        return String.format("%s: %s%n%s: %s%n%s: %s%n%s: %s%n%s: %d%n", "Nome", getFirstName(), "Ultimo Nome", getLastName(), 
+                "Data de Nascimento", getNascimento(), "Registro Academico", getRegistroAcademico(),"RE"/*, getRE()*/);
     }
     
     

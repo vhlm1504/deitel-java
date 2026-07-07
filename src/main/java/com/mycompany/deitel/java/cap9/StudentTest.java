@@ -23,6 +23,8 @@ public class StudentTest {
         
         GraduateStudent homer = new GraduateStudent("Homer", "Simpson", "01/01/1950", "Mestrado em Energia Nuclear");
         System.out.printf("%s", homer.toString());
+        
+        System.out.printf("%s", student.toString());
     }
     
 }
