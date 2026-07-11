@@ -63,6 +63,23 @@ Os métodos device-driver são declarados abstract na abstract superclass
 Novos equipamentos estão sempre sendo lançados então cada método é implementado na subclasse concreta que impletará o device driver do novo equipamento
 Este é um dos exemplos de como polimorfismo, polymorphism, faz sistemas extensíveis, extensible.
 
+abstract superclass Employee declara a interface da hierarquia, o conjunto de métodos que o programa pode invocar em 
+todas os objetos Employee
+Interface aqui significa, em general sense, as várias formas que programas podem se comunicar com objetos de qualquer subclasse Employee
+Não confundir o sentido geral aqui usado para uma "interface" com a noção de uma Java interface.
+
+métodos get não são overridden, não podem ser sobrescritos em nenhuma subclasse.
+Cada um desses métodos get é herdado e usado "as is" por cada subclasse.
+
+@Override
+    public double earnings()
+    {
+        return 0.0; //enquanto estiver incompleta para que não trave a execução de testes
+        //throw new UnsupportedOperationException();//caso deseje que o compilador aceite a execução mas que pare caso em alguma linha se tente chamar a função inacabada.
+    }
+
+ 
+
 
 
 
