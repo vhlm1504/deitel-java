@@ -23,6 +23,13 @@ public abstract class Employee {
         this.socialSecurityNumber = socialSecurityNumber;
     }
     
+    public Employee()
+    {
+        this.firstName = null;
+        this.lastName = null;
+        this.socialSecurityNumber = null;
+    }
+    
     public String getFirstName()
     {
         return firstName;

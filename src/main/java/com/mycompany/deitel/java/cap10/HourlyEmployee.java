@@ -15,16 +15,10 @@ public class HourlyEmployee extends Employee{
     
     public HourlyEmployee(String firstName, String lastName, String socialSecurityNumber, double wage, double hours)
     {
-        super(firstName, lastName, socialSecurityNumber);
-        
-        if(wage < 0.0)
-            throw new IllegalArgumentException("Hourly wage must be >= 0.0");
-        
-        if(hours < 0.0 || hours > 168.0)
-            throw new IllegalArgumentException("Hours worked must be >= 0.0 and <= 168.0");
-        
-        this.wage = wage;
-        this.hours = hours;
+        super(firstName, lastName, socialSecurityNumber);// se não especificar qual construtor ou se na superclasse não houver, chama implicitamente o construtor padrão da superclasse imeditata
+                
+        setWage(wage);
+        setHours(hours);
     }
     
     public void setWage(double wage)

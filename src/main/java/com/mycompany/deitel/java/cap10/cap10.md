@@ -78,7 +78,29 @@ Cada um desses métodos get é herdado e usado "as is" por cada subclasse.
         //throw new UnsupportedOperationException();//caso deseje que o compilador aceite a execução mas que pare caso em alguma linha se tente chamar a função inacabada.
     }
 
- 
+instanceof é um operador
+
+Métodos final, final method, em uma superclasse não poderá ser sobrescrito, override, nas suas subclasses. Então sua implementação será a mesma em todas as subclasses.O nome disso é static binding.
+Métodos declarados private são implicitamente finals.
+Métodos que são declarados static também são implicitamente finals.
+
+Final Classes
+Uma final class não ser uma superclasse. Não pode ser extended para criar uma subclasse.
+Todos seus métodos são implicitamente finals.
+Class String é um exemplo.
+Fazer a classe final também previne que programadores criem subclasses que possam bypass security restrictions.
+Como boa prática, tudo que pode ser final, deve ser final. Além da segurança, o compilador consegue aplicar otimizações quando algo é final.
+
+Problema em chamar métodos a partir de construtores.
+Não chame métodos overridable a partir de construtores. Isso pode levar a uma chamada de métodos overridden da subclasse, antes da completa inicialização do objeto.
+
+É perfeitamente aceitável invocar métodos static nos construtores. Até recomendado para evitar-se repetir validações nos casos de métodos set.
+
+Criando e usando INTERFACES
+
+
+
+
 
 
 
