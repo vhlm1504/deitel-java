@@ -97,8 +97,45 @@ Não chame métodos overridable a partir de construtores. Isso pode levar a uma 
 É perfeitamente aceitável invocar métodos static nos construtores. Até recomendado para evitar-se repetir validações nos casos de métodos set.
 
 Criando e usando INTERFACES
+Interfaces definem e padronizam a maneira na qual coisas como pessoas e sistemas podem interagir entre si.
+Objetos de software se comunicam por meio de interfaces.
+Java interface descreve um conjunto de métodos.
+Uma interface contém apenas membros contantes e abstrados.
+Diferente de classes, todas as interfaces pricisam ser públicas e não podem especificar qualquer detalhe de implementação como declarações de métodos concretose variáveis de instância.
+Todos os métodos são declarados implicitamente public abstract e todos os campos são implicitamente declarados public static final.
+
+Para usar uma interface, uma classe concreta precisa especificar que implements a interface e precisa declarar cada método na interface
+com a assinatura específica da declaração da interface.
+Uma classe que não consegue implementar todos os métodos da interface é uma classe abstrata e precisa ser declarada como abstrata.
+
+Interfaces são comumente usadas para compartilhar métodos e ctes entre classes de tipos diparate, disparate types. Classes que não se relacionam pela hierarquia de classes.
+Permite que objetos de classes não relacionadas possam ser processadas polymorphically.
+objetos de classes que implementam a mesma interface podem responder às mesmas chamadas de método.
+Cria-se interfaces que descrevem a funcionalidade requerida e depois implementa-se a interface em qualquer classe que requeira aquela funcionalidade.
+
+interface Payable
+implementar em qualquer classe que precise calcular um pagamento, Employee, Invoice....
+
+Interfaces vs Abstract Class
+Quando não há uma implementação default para ser herdada, nenhum campo ou implementação de métodos default, interfaces com frequência substituem uma abstract class.
 
 
+Uma classe por extends, herdar, apenas uma classe, mas pode implementar, implements, várias interfaces
+public class ClassName extends SuperclassName implements FirstInterface, SecondInterface, …
+
+Invoice implements Payable, so an Invoice object also is a Payable
+object, and we can assign the reference of an Invoice object to a Payable variable.
+When a class implements an interface, the same is-a relationship provided by inheritance
+applies. Class Employee implements Payable, so we can say that an Employee is a
+Payable. In fact, objects of any classes that extend Employee are also Payable objects.
+
+
+Algumas interfaces comuns na Java API
+Comparable: vários operadores de comparação entre valores primitivos. Não pode ser usada para comparar objetos
+Serializable: usada para identificar classes nas quais objetos podem escrever ou ler de algum tipo de armazenagem.files, streams 
+Runnable: implementada por uma classe que tenha uma tarefa a fazer.
+GUI event-listener interfaces: 
+AutoCloseable:
 
 
 
