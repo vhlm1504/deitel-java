@@ -14,7 +14,7 @@ The Java compiler does allow the assignment of a superclass reference to a subcl
 variable if we explicitly cast the superclass reference to the subclass type.
 
 quando uma variável de superclasse contém uma referência ao um objeto de subclasse, e essa referência é usada para invocar 
-um método, a versão da subclasse do método que é chamado.
+um método, a versão da subclasse do método que é chamado mas só depois do cast na referência para se tornar subclasse.
 
 
 Classes abstratas e métodos
@@ -24,7 +24,6 @@ são usada apenas como superclasses em hierarquias de herança. são chamadas de
 Elas são incompletas de propósito e por isso não podem ter objetos instanciados. As partes faltandes devem ser completados pelas subclasses, essas sim serão classes instanciáveis e são chamadas concretas.
 Também é possível ter subclasses abstratas, incompletas e não instanciáveis.
 Superclasses abstradas são muito generalizadas para que seja possível criar objetos, elas especificam apenas o que é comum entre as subclasses.
-
 
 Not all hierarchies contain abstract classes. However, you’ll often write client code
 that uses only abstract superclass types to reduce the client code’s dependencies on a range
@@ -38,7 +37,7 @@ TwoDimensionalShape                ThreeDimensionalShape  subclasses abstratas
 Circle, Square, Triangle           Sphere, Cube, Tetrahedron    classes concretas
 
 Normalmente uma classe abstrata tem um ou mais métodos abstratos
-public abstract void draw(); //métodos abstratos não é proveem sua implementação
+public abstract void draw(); //métodos abstratos não proveem sua implementação
 a subclasse concreta é que tem a obrigação de prover a implementação dos métodos abstract
 Constructors and static methods cannot be declared abstract
 Construtores não são herdados, então um construtor abstract nunca poderia ser implementado.
