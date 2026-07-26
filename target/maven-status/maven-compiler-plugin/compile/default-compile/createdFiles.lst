@@ -27,6 +27,7 @@ com\mycompany\deitel\java\cap10_polymorphism_and_interfaces\CommissionEmployee.c
 com\mycompany\deitel\java\cap4\Student.class
 com\mycompany\deitel\java\cap9_inheritance\BasePlusCommissionEmployeeComExtends.class
 com\mycompany\deitel\java\cap4\AutoPolicy.class
+com\mycompany\deitel\java\cap11_exception_handling\UsingExceptions.class
 com\mycompany\deitel\java\cap3\Invoice.class
 com\mycompany\deitel\java\cap10_polymorphism_and_interfaces\PayableInterfaceTest.class
 com\mycompany\deitel\java\cap11_exception_handling\DivideByZeroNoExceptionHandling.class
@@ -40,6 +41,7 @@ com\mycompany\deitel\java\cap8_classes_and_objects\SimpleTime.class
 com\mycompany\deitel\java\cap10_polymorphism_and_interfaces\Invoice.class
 com\mycompany\deitel\java\cap8_classes_and_objects\Date.class
 com\mycompany\deitel\java\cap9_inheritance\BasePlusCommissionEmployeeUsingComposition.class
+com\mycompany\deitel\java\cap11_exception_handling\AssertTest.class
 com\mycompany\deitel\java\cap8_classes_and_objects\StaticImportTest.class
 com\mycompany\deitel\java\cap9_inheritance\BasePlusCommissionEmployee.class
 com\mycompany\deitel\java\cap4\AutoPolicyTest.class
